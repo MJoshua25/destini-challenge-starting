@@ -49,7 +49,7 @@ class StoryBrain{
         _storyNumber = 5;
       }
     } else{
-      switch(choiceNumber){
+      switch(_storyNumber){
         case 0:{
           _storyNumber = 1;
           break;
