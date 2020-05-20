@@ -37,7 +37,7 @@ class StoryBrain{
 
   String getChoice1() => _storyData.first.choice1;
 
-
+  String getChoice2() => _storyData.first.choice2;
 
 }
 
