@@ -35,6 +35,9 @@ class StoryBrain{
 
   String getStory() => _storyData.first.storyTitle;
 
+  String getChoice1() => _storyData.first.choice1;
+
+
 
 }
 
