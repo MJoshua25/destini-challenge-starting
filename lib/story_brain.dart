@@ -42,25 +42,29 @@ class StoryBrain{
   String getChoice2() => _storyData.first.choice2;
 
   void nextStory(int choiceNumber){
-    if (choiceNumber == 1){
-      if (_storyNumber == 1 || _storyNumber==0){
-        _storyNumber = 2;
-      } else if (_storyNumber == 2){
-        _storyNumber = 5;
-      }
+    if (_storyNumber == 5 || _storyNumber == 4 || _storyNumber == 3){
+      restart();
     } else{
-      switch(_storyNumber){
-        case 0:{
-          _storyNumber = 1;
-          break;
+      if (choiceNumber == 1){
+        if (_storyNumber == 1 || _storyNumber==0){
+          _storyNumber = 2;
+        } else if (_storyNumber == 2){
+          _storyNumber = 5;
         }
-        case 1:{
-          _storyNumber = 3;
-          break;
-        }
-        case 2:{
-          _storyNumber = 4;
-          break;
+      } else{
+        switch(_storyNumber){
+          case 0:{
+            _storyNumber = 1;
+            break;
+          }
+          case 1:{
+            _storyNumber = 3;
+            break;
+          }
+          case 2:{
+            _storyNumber = 4;
+            break;
+          }
         }
       }
     }
